@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Coding Projects\\GetToIt\\GetToIT AVALONIA\\GetToIt\\",
+  "WorkspaceRootPath": "F:\\Coding Projects\\GetToIt\\GetToItMultiPlatform\\GetToIt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B73722D-F2FB-404B-84DB-39E961229284}|GetToIt\\GetToIt.csproj|f:\\coding projects\\gettoit\\gettoit avalonia\\gettoit\\gettoit\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B73722D-F2FB-404B-84DB-39E961229284}|GetToIt\\GetToIt.csproj|solutionrelative:gettoit\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}|GetToIt\\GetToIt.csproj|f:\\coding projects\\gettoit\\gettoitmultiplatform\\gettoit\\gettoit\\views\\mainview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}|GetToIt\\GetToIt.csproj|solutionrelative:gettoit\\views\\mainview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}|GetToIt\\GetToIt.csproj|f:\\coding projects\\gettoit\\gettoitmultiplatform\\gettoit\\gettoit\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBFA8512-1EA5-4D8C-B4AC-AB5B48A6D568}|GetToIt\\GetToIt.csproj|solutionrelative:gettoit\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "F:\\Coding Projects\\GetToIt\\GetToIT AVALONIA\\GetToIt\\GetToIt\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "GetToIt\\ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "F:\\Coding Projects\\GetToIt\\GetToIT AVALONIA\\GetToIt\\GetToIt\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "GetToIt\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T19:10:41.818Z",
+              "Title": "MainView.axaml",
+              "DocumentMoniker": "F:\\Coding Projects\\GetToIt\\GetToItMultiPlatform\\GetToIt\\GetToIt\\Views\\MainView.axaml",
+              "RelativeDocumentMoniker": "GetToIt\\Views\\MainView.axaml",
+              "ToolTip": "F:\\Coding Projects\\GetToIt\\GetToItMultiPlatform\\GetToIt\\GetToIt\\Views\\MainView.axaml",
+              "RelativeToolTip": "GetToIt\\Views\\MainView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-30T12:31:48.555Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "F:\\Coding Projects\\GetToIt\\GetToItMultiPlatform\\GetToIt\\GetToIt\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "GetToIt\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "F:\\Coding Projects\\GetToIt\\GetToItMultiPlatform\\GetToIt\\GetToIt\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "GetToIt\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T12:31:48.485Z"
             }
           ]
         }
