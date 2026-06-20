@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "GetToIt - Vite + React + TypeScript frontend",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
