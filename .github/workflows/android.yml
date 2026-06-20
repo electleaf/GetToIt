@@ -45,7 +45,16 @@ jobs:
         run: npm run build
 
       - name: Sync Capacitor Android project
-        run: npx cap sync android --verbose 2>&1 | tee sync.log
+        run: |
+          set -o pipefail
+          npx cap sync android 2>&1 | tee sync.log
+
+      - name: Build debug APK
+        run: |
+          set -o pipefail
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee ../build.log
 
       - name: Upload CI log on failure
         if: failure()
@@ -53,13 +62,9 @@ jobs:
         with:
           tag_name: ci-debug
           name: CI debug log
-          files: client/sync.log
-
-      - name: Build debug APK
-        run: |
-          cd android
-          chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          files: |
+            client/sync.log
+            client/build.log
 
       - name: Rename APK
         run: cp android/app/build/outputs/apk/debug/app-debug.apk android/app/build/outputs/apk/debug/GetToIt.apk
