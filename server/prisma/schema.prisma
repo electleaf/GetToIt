@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// A single to-do item that belongs to one local day.
+/// The daily "slate" is derived purely from `localDate`, so no server-side
+/// reset job is needed - when the user's local day rolls over, queries for the
+/// new date simply return an empty set while history is preserved.
+model Task {
+  id          String    @id @default(cuid())
+  userId      String
+  title       String
+  completed   Boolean   @default(false)
+  /// The user's local calendar day in YYYY-MM-DD form (timezone-resolved client-side).
+  localDate   String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  completedAt DateTime?
+
+  @@index([userId, localDate])
+}
