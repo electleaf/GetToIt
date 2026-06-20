@@ -45,7 +45,15 @@ jobs:
         run: npm run build
 
       - name: Sync Capacitor Android project
-        run: npx cap sync android
+        run: npx cap sync android --verbose 2>&1 | tee sync.log
+
+      - name: Upload CI log on failure
+        if: failure()
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ci-debug
+          name: CI debug log
+          files: client/sync.log
 
       - name: Build debug APK
         run: |
